@@ -1,0 +1,673 @@
+:root {
+  --darkpurple: #150e28;
+  --lightpurple: #903aff;
+  --purple: #d434fe;
+  --pink: #fe34b9;
+  --white: #ffff;
+}
+@font-face {
+  font-family: Clash Display;
+  src: url(resources/ClashDisplay-Bold.otf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(resources/Purple-Lens-Flare-PNG.png),
+    url(resources/soft\ boy.png), url(resources/Purple-Lens-Flare-PNG.png),
+    url(resources/half\ flare.png), url(resources/Purple-Lens-Flare-PNG.png),
+    url(resources/Purple-Lens-Flare-PNG.png);
+  background-color: var(--darkpurple);
+  background-repeat: no-repeat;
+  background-position: left top, right top 200px, left -130px top 1250px,
+    right top 1300px, left -250px top 2100px, right -500px top 2300px;
+  background-blend-mode: hard-light, luminosity, hard-light, hard-light,
+    hard-light, hard-light;
+}
+
+/* Navbar styling */
+hr {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: var(--white);
+  height: 1px;
+  border-width: 0;
+}
+.logo,
+.write-up h1 {
+  color: var(--white);
+  font-family: Clash Display;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.logo {
+  font-size: 30px;
+  margin-left: 50px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+nav ul {
+  color: var(--white);
+  list-style-type: none;
+  margin-left: 250px;
+}
+nav ul li a {
+  margin-left: 45px;
+  text-decoration: none;
+  color: var(--white);
+  font-family: Montserrat;
+  font-weight: 400;
+}
+nav button {
+  margin-left: 90px;
+}
+.button {
+  background: linear-gradient(270deg, var(--lightpurple) 0%, var(--pink) 100%);
+  border: none;
+  border-radius: 4px;
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  width: 150px;
+  height: 40px;
+}
+.button,
+#logo :hover {
+  cursor: pointer;
+}
+
+/* Hero section design */
+
+#ignite {
+  color: var(--white);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+  font-size: 33px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  padding-top: 20px;
+  padding-right: 50px;
+  text-align: right;
+}
+#idea {
+  position: relative;
+  left: 450px;
+  bottom: -25px;
+  width: 40px;
+}
+.design,
+.design-2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.design {
+  bottom: 90px;
+  left: 500px;
+  width: 80px;
+}
+.design-2 {
+  bottom: 160px;
+  left: 580px;
+  width: 60px;
+}
+.write-up {
+  color: var(--white);
+  width: 550px;
+  margin-left: 70px;
+  position: relative;
+  top: 10px;
+}
+.write-up h1 {
+  font-size: 70px;
+  margin-bottom: 7px;
+}
+#line2 {
+  margin-top: 20px;
+}
+.write-up h1 span,
+#intro-text span,
+#rule-text span,
+#Judging-text span,
+#questions h2 span,
+#prizes-text span,
+.policy-intro h2 span,
+.policy-explained h4,
+.diff {
+  color: var(--purple);
+}
+#text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  width: 470px;
+  margin-top: -150px;
+  margin-bottom: 20px;
+  line-height: 166%; /* 33.2px */
+}
+.write-up button {
+  margin-bottom: 25px;
+}
+#timer {
+  font-family: Unica One;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133%; /* 85.12px */
+}
+#timer span {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133%; /* 18.62px */
+}
+#intro {
+  margin-top: 45px;
+}
+#intro-img,
+#rule-text,
+#questions-img {
+  margin-left: 30px;
+}
+#big-idea,
+#rule-img {
+  width: 460px;
+  height: 480px;
+}
+#intro-text,
+#rule-img {
+  margin-left: 80px;
+  position: relative;
+  top: 25px;
+}
+#intro h2,
+#rule-text h2,
+#Judging-text h2,
+#questions h2,
+#timeline-text h2,
+#prizes-text h2,
+#partners-text h2,
+.policy-intro h2 {
+  color: var(--white);
+  font-family: Clash Display;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#intro h2,
+#questions h2,
+.policy-intro h2 {
+  width: 400px;
+}
+#intro p,
+#rule-text p,
+#partners-text p {
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.5px; /* 196.429% */
+  width: 513.8px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#curly {
+  max-width: 49.43px;
+  max-height: 57.974px;
+  transform: rotate(-5.92deg);
+  position: relative;
+  left: 400px;
+  bottom: 40px;
+}
+#rules,
+#intro,
+nav ul,
+#Judging,
+#questions,
+#timeline-text,
+#reward,
+.prizes-amount,
+#partners,
+.grid-container > div,
+#Terms,
+.policy,
+.policy-explained ul,
+#extra,
+.policy-img,
+#reserved {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rule-text {
+  color: var(--white);
+  width: 500px;
+}
+#rule-text h2,
+#prizes-text h2 {
+  width: 200px;
+}
+#Ellipse {
+  position: relative;
+  width: 85px;
+  bottom: 385px;
+  left: 280px;
+  z-index: -10;
+}
+#line3 {
+  margin-top: 50px;
+}
+#Judging {
+  padding-top: 70px;
+}
+#Judging-text {
+  color: var(--white);
+  margin-left: 30px;
+}
+#Judging-text h2 {
+  width: 300px;
+}
+#Judging-text ul {
+  list-style-type: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+#Judging-text ul li {
+  line-height: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+}
+#Judging-text ul li span {
+  color: var(--pink);
+}
+#Judging-img {
+  width: 550px;
+  position: relative;
+  top: 130px;
+}
+#Ellipse-2 {
+  width: 85px;
+  bottom: 385px;
+  z-index: -10;
+  position: relative;
+  bottom: 470px;
+  left: 85px;
+}
+#Judging button {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+#accordion-contain {
+  display: flex;
+  flex-direction: column;
+}
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  font-family: Montserrat;
+  color: var(--white);
+  cursor: pointer;
+  padding: 15px 0px 15px 0px;
+  width: 450px;
+  text-align: left;
+  border: none;
+  border-bottom: 2px solid var(--purple);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  outline: none;
+  /* transition: 0.4s; */
+}
+.accordion span {
+  color: var(--purple);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.panel {
+  padding: 0 18px;
+  background-color: var(--pink);
+  display: none;
+  overflow: hidden;
+}
+#questions {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+#questions-text p,
+#timeline-text p,
+.policy-explained p {
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.5px; /* 196.429% */
+  width: 350px;
+  margin-bottom: 20px;
+}
+#thinking-man {
+  width: 550px;
+  position: relative;
+  top: 50px;
+}
+#Timeline {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+#timeline-text {
+  color: var(--white);
+  text-align: center;
+  flex-direction: column;
+}
+#times {
+  /*  margin: 0 auto;
+  max-width: 1200px;
+  position: relative; */
+}
+
+.container {
+  width: 500px;
+  position: relative;
+}
+.container h2 {
+  color: var(--purple);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.container p {
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170.9%; /* 27.344px */
+  width: 500px;
+}
+.left-container {
+  left: 30px;
+  text-align: right;
+}
+.right-container {
+  left: 55%;
+  bottom: 50px;
+}
+/* .num {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-radius: 26.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  left: 49%;
+  top: 70px;
+  background: linear-gradient(
+    270deg,
+    var(--lightpurple) 0%,
+    var(--purple) 100%
+  );
+}
+ */
+#prizes {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin-bottom: -70px;
+}
+#prizes-text {
+  width: 400px;
+  position: relative;
+  left: 700px;
+  margin-bottom: 20px;
+}
+#prizes-text p {
+  width: 360px;
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.5px; /* 196.429% */
+  margin-bottom: 20px;
+}
+#prizes-text {
+  color: var(--white);
+  /* text-align: right; */
+  /* background-color: aliceblue; */
+}
+#reward-img {
+  width: 500px;
+  margin-right: -220px;
+  position: relative;
+  bottom: 100px;
+}
+.medals {
+  display: flex;
+  color: var(--white);
+  align-items: center;
+  justify-content: space-evenly;
+  width: 550px;
+  /* background-color: red; */
+}
+.prizes-amount {
+  width: 150px;
+  text-align: center;
+  height: 220px;
+  border-radius: 8px;
+  border: 1px solid var(--purple);
+  background: rgba(212, 52, 254, 0.12);
+  flex-direction: column;
+}
+.highest {
+  width: 150px;
+  text-align: center;
+  height: 247px;
+  border-radius: 8px;
+  border: 1px solid var(--lightpurple);
+  background: rgba(144, 58, 255, 0.12);
+}
+.money,
+.highest-money {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 216.4%; /* 69.248px */
+}
+.money {
+  color: var(--purple);
+  margin-top: 20px;
+}
+.highest-money {
+  color: var(--lightpurple);
+  margin-top: 40px;
+}
+.position {
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 216.4%; /* 77.904px */
+  display: flex;
+  flex-direction: column;
+}
+.position span {
+  font-size: 20px;
+  margin-bottom: -10px;
+}
+.first {
+  margin-top: 100px;
+}
+.prizes-amount img {
+  margin-top: -100px;
+  margin-bottom: 20px;
+}
+#gold_medal {
+  width: 16%;
+  position: relative;
+  bottom: 130px;
+  left: 371px;
+  /* background-color: #d434fe; */
+}
+
+#partners {
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#partners-text {
+  text-align: center;
+  color: var(--white);
+}
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 90px 90px;
+  padding: 50px 0px 50px 0px;
+  border-radius: 5px;
+  width: 700px;
+  border: 1px solid var(--purple);
+  margin-top: 50px;
+}
+.grid-container > div {
+  width: 80px;
+}
+#Terms {
+  margin-top: -120px;
+}
+.policy,
+.policy-explained ul,
+.policy-img {
+  flex-direction: column;
+}
+.policy-intro {
+  color: var(--white);
+}
+.policy-explained {
+  color: var(--white);
+  width: 500px;
+  border: 1px solid var(--purple);
+  border-radius: 5px;
+  padding: 40px;
+  margin-left: 70px;
+}
+.policy-explained ul {
+  margin-left: 30px;
+  list-style-image: url(resources/list\ terms.png);
+}
+.policy-intro p {
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 188.4%; /* 26.376px */
+  width: 430px;
+  margin-bottom: 25px;
+}
+.policy-explained p {
+  width: 420px;
+}
+.policy-explained h4 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.policy-img {
+  width: 400px;
+  padding-top: 200px;
+  margin-left: 50px;
+}
+#policy-sign {
+  width: 360px;
+}
+#policy-boy {
+  position: relative;
+  bottom: 320px;
+  right: 15px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+#footer1,
+#footer2 {
+  display: flex;
+}
+#footer2 {
+  /* background-color: red; */
+  width: 100%;
+  justify-content: space-evenly;
+}
+#reserved {
+  padding: 20px;
+  line-height: normal;
+}
+.footer1p,
+#footer2 li,
+#reserved {
+  color: var(--white);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.footer1p {
+  margin-left: 50px;
+  width: 430px;
+  margin-top: 10px;
+  line-height: 172.4%; /* 20.688px */
+}
+.-terms {
+  position: relative;
+  top: 5px;
+}
+.--terms {
+  margin-top: 60px;
+}
+#footer2 li {
+  list-style: none;
+  margin-top: 10px;
+  line-height: 172.4%; /* 20.688px */
+}
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+  align-items: center;
+  /* background-color: green; */
+}
